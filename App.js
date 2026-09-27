@@ -6,7 +6,6 @@ import {
   TouchableOpacity,
   ScrollView,
   StyleSheet,
-  SafeAreaView,
 } from "react-native";
 
 import Header from "./components/Header";
@@ -55,7 +54,7 @@ const App = () => {
   const mensagem = `Produtos encontrados: ${produtosFiltrados.length}`;
 
   return (
-    <SafeAreaView style={styles.safeArea}>
+    <View style={styles.safeArea}>
       <View style={styles.container}>
         <Header />
 
@@ -115,7 +114,7 @@ const App = () => {
         </View>
 
       </View>
-    </SafeAreaView>
+    </View>
   );
 };
 
